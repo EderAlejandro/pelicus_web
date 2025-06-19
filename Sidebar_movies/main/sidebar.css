@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+  display: flex;
+}
+
+/* Barra lateral */
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  background-color: #202123;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  text-align: start;
+}
+
+/* Enlaces del sidebar */
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: 0.2s;
+  font-weight: 500;
+}
+.sidebar a:hover {
+  color: #00ffff;
+  transform:translateX(27px) scale(1.2); 
+}
+
+.sidebar h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+/* Contenido principal (margen izquierdo para no taparlo con la barra) */
+.contenido {
+ position: absolute;
+ margin-left: 220px;
+ padding-left: 20px;
+}
+
+.contenido img {
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+    mask-image: linear-gradient(rgb(0, 0, 0) 40%, transparent);
+}
