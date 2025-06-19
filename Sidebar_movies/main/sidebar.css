@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: Roboto;
   display: flex;
 }
@@ -36,14 +37,15 @@ body {
 }
 /* Contenido principal (margen izquierdo para no taparlo con la barra) */
 .contenido {
- position: absolute;
- margin-left: 220px;
- padding-left: 20px;
+    margin-left: 220px;
+    width: 100%;
+    height: 100%;
 }
 
-.contenido img {
-    width: 250px;
-    height: 180px;
-    object-fit: contain;
-    mask-image: linear-gradient(rgb(0, 0, 0) 40%, transparent);
+.contenido__title h1 {
+    text-align: center;
+    height: 100px;
+    background: #202123;
+    color: white;
+    margin-bottom: 100px;
 }
