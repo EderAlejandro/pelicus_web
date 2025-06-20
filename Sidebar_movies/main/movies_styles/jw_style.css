@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     background: var(--bg_color_blue);
     width: 100%;
     box-shadow: #000 0px 3px 4px;
@@ -31,7 +31,6 @@ body {
 
 .sidebar {
     position: fixed;
-    top: 85px;
     height: 100vh;
     background: var(--bg_color_2);
     z-index: 1;
@@ -57,4 +56,82 @@ body {
     color: var(--text_color_2);
     transition-duration: 0.4s;
     transform: scale(1.2);
+}
+
+.content{
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    height: 100vh;
+    background-color: #ebebeb;
+}
+
+.content__start {
+    display: grid;
+    z-index: inherit;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.start__img {
+    display: grid, flex;
+    grid-column: span 4;
+    height: 100%;
+    margin-left: 80px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: calc(100% - 150px);
+    background-color: var(--bg_color_blue);
+    margin-top: 133px;
+    border-radius: 20px;
+}
+
+.start__img h2 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: #e3bd00 0px 0px 80px;
+    z-index: 3;
+    color: var(--text_color_2);
+}
+
+.start__img img {
+    mask-image: linear-gradient(black 90%, transparent);
+}
+
+.carnotaurus {
+    position: absolute;
+    width: 500px;
+    height: 260px;
+    top: 170px;
+    left: 870px;
+}
+
+.pteranodon {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    top: 100px;
+    left: 280px;
+}
+
+.triceratops {
+    position: absolute;
+    width: 470px;
+    height: 250px;
+    top: 200px;
+    left: 150px;
+    z-index: 2;
+}
+
+.velociraptor {
+    position: absolute;
+    width: 370px;
+    height: 200px;
+    top: 260px;
+    left: 790px;
+    transform: rotateY(180deg);
+
 }
